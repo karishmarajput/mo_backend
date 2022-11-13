@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+		<form action="/newpost" method="POST" enctype="multipart/form-data">
+			<div>
+				<label for="name">Image Title</label>
+				<input type="text" id="name" placeholder="Name"
+					value="" name="title" required>
+			</div>
+			<div>
+				<label for="name">Category</label>
+				<input type="text" id="name" placeholder="Name"
+					value="" name="category" required>
+			</div>
+			<div>
+				<label for="name">sub category</label>
+				<input type="text" id="name" placeholder="Name"
+					value="" name="subCategory" required>
+			</div>
+			<div>
+				<label for="desc">Image Description</label>
+				<textarea id="desc" name="description" value="" rows="2"
+						placeholder="Description" required>
+				</textarea>
+			</div>
+			<div>
+				<label for="image">authorName</label>
+				<input type="text"
+					name="authorName" value="" required>
+			</div>
+			<div>
+				<label for="desc">authorAvatar</label>
+				<input id="desc" type="file" name="authorAvatar"
+						 required>
+				</input>
+			</div>
+			<div>
+				<label for="image">createdAt</label>
+				<input type="text"
+					name="createdAt" value="" required>
+			</div>
+			<div>
+				<label for="image">Upload Image</label>
+				<input type="file" id="image"
+					name="cover" value="" required>
+			</div>
+			<div>
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>

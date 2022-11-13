@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+		<form action="/register" method="POST" enctype="multipart/form-data">
+			<div>
+				<label for="name">name</label>
+				<input type="text" id="name" placeholder="Name"
+					value="" name="name" required>
+			</div>
+			<div>
+				<label for="name">Password</label>
+				<input type="password" id="name" placeholder="Name"
+					value="" name="password" required>
+			</div>
+			<div>
+				<label for="name">email</label>
+				<input type="email" id="name" placeholder="Name"
+					value="" name="email" required>
+			</div>
+			<div>
+				<label for="desc">About Us</label>
+				<textarea id="desc" name="aboutUs" value="" rows="2"
+						placeholder="AboutUs" required>
+				</textarea>
+			</div>
+			<div>
+				<label for="image">DOB</label>
+				<input type="date"
+					name="dob" value="" required>
+			</div>
+			<div>
+				<label for="desc">Avatar</label>
+				<input id="desc" type="file" name="userAvatar"
+						 required>
+				</input>
+			</div>
+			<div>
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

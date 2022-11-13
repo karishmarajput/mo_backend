@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Uploading</title>
+</head>
+
+<body>
+	<h1>To Upload Image on mongoDB</h1>
+	<hr>
+	<h1>Uploaded Images</h1>
+    <div>
+        <% items.forEach(function(image) { %>
+        <div>
+            <div>
+                <img src="data:image/<%=image.cover.contentType%>;base64,
+                     <%=image.cover.data.toString('base64')%>">
+				<img src="data:image/<%=image.authorAvatar.contentType%>;base64,
+                     <%=image.authorAvatar.data.toString('base64')%>">
+                <div>
+                    <h5><%= image.title %></h5>
+                    
+  
+  
+					<p><%= image.description %></p>
+  
+  
+  
+                </div>
+            </div>
+        </div>
+        <% }) %>
+    </div>
+
+	<hr>
+</body>
+
+</html>
